@@ -12,14 +12,11 @@ export class WidgetComponent implements OnInit {
 
   mqT:Mqttflora[];
   constructor(private restService:RestService) { 
-
   }
-
   ngOnInit() {
     this.restService.getData()
     .subscribe(mqqtdata=>{
       this.mqT=mqqtdata;
-
       console.log(mqqtdata);
     })
   }
