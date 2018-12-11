@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="row">
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'ph'"></data-values>
+        </div>
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'ec'"></data-values>
+        </div>
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'lux'"></data-values>
+        </div>
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'temp'"></data-values>
+        </div>
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <!-- <data-values [typeName] ="'waterLevel'"></data-values> -->
+                <water-level></water-level>
+        </div>
+        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'Humidity'"></data-values>
+        </div>
+    </div>
+</div>
+
+
+<ul class="list-group">
+        <li *ngFor="let post of posts"
+        class="list-group-item">{{post.id}</li>
+</ul>
