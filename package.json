@@ -22,6 +22,7 @@
     "angular-fusioncharts": "^2.0.2",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
+    "express": "^4.16.4",
     "fusioncharts": "^3.13.2-sr.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"

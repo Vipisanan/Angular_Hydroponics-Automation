@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Http} from '@angular/http';
+import { RestService } from 'src/app/rest.service';
+import { Mqttflora } from 'src/app/models/mqttflora';
 
 @Component({
   selector: 'app-widget',
@@ -8,17 +9,19 @@ import {Http} from '@angular/http';
 })
 export class WidgetComponent implements OnInit {
 
-  //constructor(){}
-  constructor(http:Http) { 
-    http.get('http://localhost:8080/floradevice/de')
-    .subscribe(response => {
-      console.log("=============================================");
-      
-      console.log(response.json());
-    });
+
+  mqT:Mqttflora[];
+  constructor(private restService:RestService) { 
+
   }
 
   ngOnInit() {
+    this.restService.getData()
+    .subscribe(mqqtdata=>{
+      this.mqT=mqqtdata;
+
+      console.log(mqqtdata);
+    })
   }
 
 }

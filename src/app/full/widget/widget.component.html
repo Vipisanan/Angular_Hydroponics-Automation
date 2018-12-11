@@ -1,25 +1,25 @@
 
 <div class="container">
-    <div class="row">
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
-                <data-values [typeName] ="'ph'"></data-values>
+    <div  *ngIf="mqT" class="row">
+        <div class="col-lg-6 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'ph'" [valuePass]="'44'"></data-values>
         </div>
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
-                <data-values [typeName] ="'ec'"></data-values>
+        <div  class="col-lg-6 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'ec'" [valuePass]="mqT[0].mi_conductivity"></data-values>
         </div>
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
-                <data-values [typeName] ="'lux'"></data-values>
+        <div  class="col-lg-6 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'lux'" [valuePass]="mqT[0].mi_light"></data-values>
         </div>
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
-                <data-values [typeName] ="'temp'"></data-values>
+        <div  class="col-lg-6 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+                <data-values [typeName] ="'temp'" [valuePass]="mqT[0].temperature"></data-values>
         </div>
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
+        <!-- <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
                 <!-- <data-values [typeName] ="'waterLevel'"></data-values> -->
-                <water-level></water-level>
-        </div>
-        <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px">
-                <data-values [typeName] ="'Humidity'"></data-values>
-        </div>
+                <!-- <water-level></water-level> -->
+        <!-- </div> -->
+        <!-- <div  class="col-lg-4 col-md-6  col-sm-12" style="top: 100px; margin-bottom:35px"> -->
+                <!-- <data-values [typeName] ="'Humidity'"></data-values> -->
+        <!-- </div> -->
     </div>
 </div>
 

@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 const prop ={
   ph:{
-    name:"ph",
+    name:"Moisture",
     icon:"../assets/icon-img/ph.png"
   },
   temp:{
