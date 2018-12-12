@@ -8,7 +8,8 @@ import {catchError, map, tap} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class RestService {
-  private url ="http://senz-flora.herokuapp.com/de";
+  private url ="http://localhost:8081/floradevice/de"; 
+  // http://senz-flora.herokuapp.com/de
 
   constructor(private _httpClient : HttpClient) { }
 

@@ -23,7 +23,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/c3/c3.css",
               "src/styles.css"
             ],
             "scripts": []
