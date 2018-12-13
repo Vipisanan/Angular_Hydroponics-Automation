@@ -3,14 +3,14 @@ import { Component, OnInit, Input } from '@angular/core';
 const prop ={
   ph:{
     name:"Moisture",
-    icon:"../assets/icon-img/ph.png"
+    icon:"../assets/icon-img/humidity.png"
   },
   temp:{
-    name:"temp",
+    name:"Temperature",
     icon:"../assets/icon-img/temp.png"
   },
   waterLevel:{
-    name:"waterLevel",
+    name:"WaterLevel",
     icon:"../assets/icon-img/water.png"
   },
   Humidity:{
@@ -18,11 +18,11 @@ const prop ={
     icon:"../assets/icon-img/humidity.png"
   },
   ec:{
-    name:"ec",
+    name:"Electrical Conductivity",
     icon:"../assets/icon-img/ec.png"
   },
   lux:{
-    name:"lux",
+    name:"Lux",
     icon:"../assets/icon-img/lux.png"
   }
 
